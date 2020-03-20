@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SP_IvaLibroObra">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="clsticas029:sa">
+          <Created>2020-03-18T16:40:24.6685302-03:00</Created>
+          <Type>SQL</Type>
+          <Server>clsticas029</Server>
+          <UserName>sa</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="PA_ProcesoCalculo_LobResDetAcum.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:clsticas029:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>clsticas029</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>PA_ProcesoCalculo_LobResDetAcum.sql</FullPath>
+        </FileNode>
+        <FileNode Name="PA_ProcesoCarga_Lob_Borrador_Detalle.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:clsticas029:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>clsticas029</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>PA_ProcesoCarga_Lob_Borrador_Detalle.sql</FullPath>
+        </FileNode>
+        <FileNode Name="PA_ProcesoCarga_Lob_Cerrado_Detalle.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:clsticas029:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>clsticas029</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>PA_ProcesoCarga_Lob_Cerrado_Detalle.sql</FullPath>
+        </FileNode>
+        <FileNode Name="PA_ProcesoCarga_Lob_Impuestos.SQL">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:clsticas029:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>clsticas029</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>PA_ProcesoCarga_Lob_Impuestos.SQL</FullPath>
+        </FileNode>
+        <FileNode Name="PA_ProcesoCarga_Lob_Impuestos_Por_Empresa.SQL">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:clsticas029:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>clsticas029</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>PA_ProcesoCarga_Lob_Impuestos_Por_Empresa.SQL</FullPath>
+        </FileNode>
+        <FileNode Name="PA_ProcesoCarga_LobResumenDetalle.SQL">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:clsticas029:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>clsticas029</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>PA_ProcesoCarga_LobResumenDetalle.SQL</FullPath>
+        </FileNode>
+        <FileNode Name="ProcesoCarga_LobResumenDetalle.SQL">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:clsticas029:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>clsticas029</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>ProcesoCarga_LobResumenDetalle.SQL</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

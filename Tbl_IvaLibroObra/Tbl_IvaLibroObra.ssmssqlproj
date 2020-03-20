@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Tbl_IvaLibroObra">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items />
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="1.-CREATE_TABLE_LOB_IMPUESTOS.SQL">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>1.-CREATE_TABLE_LOB_IMPUESTOS.SQL</FullPath>
+        </FileNode>
+        <FileNode Name="1.-CREATE_TABLE_LOB_RESUMEN_DETALLE.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>1.-CREATE_TABLE_LOB_RESUMEN_DETALLE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="2.-ALTER_TABLE_LCD_LBD.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>2.-ALTER_TABLE_LCD_LBD.sql</FullPath>
+        </FileNode>
+        <FileNode Name="2.-ALTER_TABLE_LOB_BORRADOR_DETALLE.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>2.-ALTER_TABLE_LOB_BORRADOR_DETALLE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="6.-CREATE_TABLE_LOB_RESUMEN_DETALLE.SQL">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>6.-CREATE_TABLE_LOB_RESUMEN_DETALLE.SQL</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

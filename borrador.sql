@@ -1,0 +1,36 @@
+DECLARE @emp_cod CHAR(6) = '0102'
+
+SELECT APT.CuryTaxAmt00 + APT.CuryTaxAmt01 + APT.CuryTaxAmt02
+	,(APT.CuryTaxAmt00 + APT.CuryTaxAmt01 + APT.CuryTaxAmt02)/LMU.mon_valor
+	,LCD.Cer_Id
+ FROM LOB_CERRADO_DETALLE LCD WITH (NOLOCK)
+ INNER JOIN LOB_CERRADO LC WITH (NOLOCK) ON LCD.Cer_Id = LC.cer_id
+ INNER JOIN LOB_MONEDA_UF LMU ON LC.periodo = LMU.mon_periodo
+ INNER JOIN DOC_APTran APT ON 1=1
+	AND APT.apdoc_id IN (
+ 		LCD.Aux_apdoc_cl_id
+ 		,LCD.Aux_apdoc_id)
+	AND APT.TranAmt = LC.DrAmt - LC.CrAmt
+ WHERE 1=1
+	--AND LCD.TaxAmt IS NULL
+	AND APT.User1 != ''
+	AND LCD.Emp_Cod = @emp_cod
+	AND 'EXENTO' NOT IN (APT.taxId00, APT.taxId01, APT.taxId02)
+	AND APT.CuryTaxAmt00 + APT.CuryTaxAmt01 + APT.CuryTaxAmt02 != 0
+	--AND LC.modulo = 'AP'
+	AND LCD.cer_id IN (2657961,2657962)
+	ORDER BY 1, 3
+
+
+SELECT InvtID,* FROM LOB_CERRADO WHERE 1=1
+	AND cer_id IN (2657961,2657962)
+	AND obra_cod = 'II10'
+	AND RefNbr = '038953'
+SELECT * FROM LOB_CERRADO_DETALLE WHERE cer_id IN (2657961,2657962)
+SELECT * FROM DOC_APTran WHERE apdoc_id = 15785344
+
+SELECT * FROM LOB_CERRADO 
+WHERE 1=1
+	--AND InvtID = 99402
+	AND obra_cod = 'II10'
+	AND RefNbr = '034799'

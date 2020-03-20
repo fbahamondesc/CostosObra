@@ -3,12 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # SQL Server Management Studio Solution File, Format Version 18.00
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "SP_IvaLibroObra", "SP_IvaLibroObra\SP_IvaLibroObra.ssmssqlproj", "{5FFD4863-03F9-4076-8D53-DD84581367B8}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Tbl_IvaLibroObra", "Tbl_IvaLibroObra\Tbl_IvaLibroObra.ssmssqlproj", "{169CEC77-28F7-4D90-B3D4-5C6CBEFAECA2}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "V_IvaLibroObra", "V_IvaLibroObra\V_IvaLibroObra.ssmssqlproj", "{60D94F96-923E-426E-B227-8BE015A1CDAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{29EB1C9C-C22E-4D1B-9F44-FA55AF70F5E3}.Default|Default.ActiveCfg = Default
+		{5FFD4863-03F9-4076-8D53-DD84581367B8}.Default|Default.ActiveCfg = Default
+		{169CEC77-28F7-4D90-B3D4-5C6CBEFAECA2}.Default|Default.ActiveCfg = Default
+		{60D94F96-923E-426E-B227-8BE015A1CDAD}.Default|Default.ActiveCfg = Default
+		{F1AB2709-10EA-4674-A7CD-A3D3F6CE347B}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
