@@ -139,7 +139,7 @@ BEGIN
 					,A.PerPost
 					,A.TranAmt AS TranTot
 					,CASE 
-						WHEN A.TranAmt < 0
+						WHEN LC.DrAmt - LC.CrAmt < 0
 							THEN (A.CuryTaxAmt00 + A.CuryTaxAmt01 + A.CuryTaxAmt02) * - 1
 						ELSE (A.CuryTaxAmt00 + A.CuryTaxAmt01 + A.CuryTaxAmt02)
 						END AS TaxAmt00
@@ -147,8 +147,8 @@ BEGIN
 				INNER JOIN LOB_CERRADO LC ON LCD.Cer_Id = LC.cer_id
 				INNER JOIN DOC_APTran A  ON 1=1
 					AND A.apdoc_id IN (LCD.Aux_apdoc_cl_id, LCD.Aux_apdoc_id)
-					AND A.TranAmt = LC.DrAmt - LC.CrAmt
-					AND A.BatNbr = LCD.Lote
+					AND A.TranAmt = ABS(LC.DrAmt - LC.CrAmt)
+					--AND A.BatNbr = LCD.Lote
 					AND A.RefNbr = LCD.RefNbr
 				WHERE A.User1 != '' 
 					AND LCD.Emp_Cod = @emp_cod
@@ -168,7 +168,7 @@ BEGIN
 				AND B.TranAmt != 0 
 				AND ('ESPECIFICO' IN (B.taxId00, B.taxId01, B.taxId02) 
 					OR B.TranDesc = 'Impuesto Especifico')
-			WHERE NOT (A.TaxAmt00 = 0 AND B.TranAmt IS NULL)
+			WHERE NOT (A.TaxAmt00 = 0)
 
 			UNION
 			/* Agrega impuestos de modulos AR */
@@ -230,7 +230,7 @@ FROM
 		,A.PerPost
 		,A.TranAmt AS TranTot
 		,CASE 
-			WHEN A.TranAmt < 0
+			WHEN LB.DrAmt - LB.CrAmt < 0
 				THEN (A.CuryTaxAmt00 + A.CuryTaxAmt01 + A.CuryTaxAmt02) * - 1
 			ELSE (A.CuryTaxAmt00 + A.CuryTaxAmt01 + A.CuryTaxAmt02)
 			END AS TaxAmt00
@@ -238,8 +238,8 @@ FROM
 	INNER JOIN LOB_BORRADOR LB ON LBD.Bor_Id = LB.bor_id
 	INNER JOIN DOC_APTran A  ON 1=1
 		AND A.apdoc_id IN (LBD.Aux_apdoc_cl_id, LBD.Aux_apdoc_id)
-		AND A.TranAmt = LB.DrAmt - LB.CrAmt
-		AND A.BatNbr = LBD.Lote
+		AND A.TranAmt = ABS(LB.DrAmt - LB.CrAmt)
+		--AND A.BatNbr = LBD.Lote
 		AND A.RefNbr = LBD.RefNbr
 	WHERE A.User1 != '' 
 		AND LBD.Emp_Cod = @emp_cod
