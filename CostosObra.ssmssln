@@ -9,6 +9,8 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Tbl_IvaLibroObra", "Tbl_Iva
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "V_IvaLibroObra", "V_IvaLibroObra\V_IvaLibroObra.ssmssqlproj", "{60D94F96-923E-426E-B227-8BE015A1CDAD}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Borradores", "Borradores\Borradores.ssmssqlproj", "{8C0BCAC3-9C77-4964-91A9-EBA4952551C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
@@ -17,7 +19,8 @@ Global
 		{5FFD4863-03F9-4076-8D53-DD84581367B8}.Default|Default.ActiveCfg = Default
 		{169CEC77-28F7-4D90-B3D4-5C6CBEFAECA2}.Default|Default.ActiveCfg = Default
 		{60D94F96-923E-426E-B227-8BE015A1CDAD}.Default|Default.ActiveCfg = Default
-		{F1AB2709-10EA-4674-A7CD-A3D3F6CE347B}.Default|Default.ActiveCfg = Default
+		{B8CE3DA5-FCA0-481C-9D49-D46AB56BAFBB}.Default|Default.ActiveCfg = Default
+		{8C0BCAC3-9C77-4964-91A9-EBA4952551C9}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
